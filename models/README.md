@@ -35,7 +35,10 @@ Example conversion, assuming the original PyTorch files have been downloaded int
 
 ```bash
 mkdir models/whisper-medium
-python models/convert-pt-to-ggml.py ~/.cache/whisper/medium.pt ~/path/to/repo/whisper/ ./models/whisper-medium
+python models/convert-pt-to-ggml.py \
+    ~/.cache/whisper/medium.pt \
+    ~/path/to/repo/whisper/ \
+    ./models/whisper-medium
 mv ./models/whisper-medium/ggml-model.bin models/ggml-medium.bin
 rmdir models/whisper-medium
 ```
